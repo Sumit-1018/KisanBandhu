@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Your New Palette -->
+    <color name="kb_eerie_black">#23231A</color>
+    <color name="kb_black_olive">#322F20</color>
+    <color name="kb_field_drab">#6A5837</color>
+    <color name="kb_olive">#988F2A</color>
+    <color name="kb_orange">#FE5F00</color>
+
+    <!-- UI Colors -->
+    <color name="kb_background_light">#FBF9F3</color> <!-- A light cream derived from palette -->
+    <color name="kb_white">#FFFFFF</color>
+    <color name="kb_black">#000000</color>
+    <color name="kb_text_dark">#322F20</color>
+    <color name="kb_text_light">#FFFFFF</color>
+    <color name="kb_icon_tint">#6A5837</color>
+</resources>

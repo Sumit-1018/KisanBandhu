@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Focused state -->
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/kb_background_light" />
+            <corners android:radius="24dp" />
+            <stroke android:width="2dp" android:color="@color/kb_field_drab" /> <!-- CHANGED COLOR -->
+        </shape>
+    </item>
+
+    <!-- Default state -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#1F6A5837" /> <!-- Light version of field drab -->
+            <corners android:radius="24dp" />
+            <stroke android:width="1dp" android:color="#00000000" />
+        </shape>
+    </item>
+</selector>

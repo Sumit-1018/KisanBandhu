@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login_full_gradient"
+    tools:context=".MainActivity">
+
+    <!-- CHAT LIST -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:clipToPadding="false"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/imagePreviewContainer"
+        tools:listitem="@layout/item_chat_response"/>
+
+    <!-- IMAGE PREVIEW -->
+    <FrameLayout
+        android:id="@+id/imagePreviewContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/inputBar">
+
+        <ImageView
+            android:id="@+id/ivImagePreview"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/bg_frost_box"/>
+
+        <ImageButton
+            android:id="@+id/btnClosePreview"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="-10dp"
+            android:layout_gravity="top|start"
+            android:background="@drawable/circle_background_glow"
+            android:src="@drawable/ic_close"/>
+    </FrameLayout>
+
+    <!-- INPUT BAR -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/inputBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardElevation="14dp"
+        app:cardCornerRadius="24dp"
+        app:cardBackgroundColor="#22FFFFFF"
+        app:strokeWidth="1dp"
+        app:strokeColor="#44FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:gravity="center_vertical">
+
+            <!-- ATTACH -->
+            <ImageButton
+                android:id="@+id/btnAttachImage"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_attach_image"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                app:tint="#00F5D4"/>
+
+            <!-- VOICE -->
+            <ImageButton
+                android:id="@+id/btnVoiceQuery"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_mic"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                app:tint="#00F5D4"/>
+
+            <!-- INPUT BOX -->
+            <EditText
+                android:id="@+id/etQuery"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="48dp"
+                android:maxLines="4"
+                android:hint="Ask something..."
+                android:textColor="#FFFFFF"
+                android:textColorHint="#AAFFFFFF"
+                android:padding="12dp"
+                android:background="@drawable/bg_frost_box"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="12dp"/>
+
+            <!-- SEND BUTTON -->
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btnSend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_send"
+                android:background="@drawable/bg_button_glow"
+                app:tint="@color/kb_black"
+                app:fabSize="mini" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

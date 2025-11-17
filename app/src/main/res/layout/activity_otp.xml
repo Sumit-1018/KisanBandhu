@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/bg_login_full_gradient">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvOtpTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verify OTP"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:shadowColor="#80000000"
+            android:shadowDx="0"
+            android:shadowDy="2"
+            android:shadowRadius="6"
+            android:fontFamily="@font/patua_one" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/tvOtpSub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter the 6-digit code sent to your phone"
+            android:textSize="15sp"
+            android:textColor="#CCFFFFFF"
+            android:layout_below="@id/tvOtpTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/alegreya_sans_thin" />
+
+        <!-- Glass Card -->
+        <LinearLayout
+            android:id="@+id/otpCard"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            android:padding="28dp"
+            android:background="@drawable/bg_glass_card"
+            android:elevation="18dp">
+
+            <!-- OTP input boxes -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="28dp">
+
+                <EditText
+                    android:id="@+id/otp1"
+                    android:layout_width="48dp"
+                    android:layout_height="55dp"
+                    android:gravity="center"
+                    android:maxLength="1"
+                    android:inputType="number"
+                    android:textSize="20sp"
+                    android:background="@drawable/bg_input_frost" />
+
+                <EditText
+                    android:id="@+id/otp2"
+                    android:layout_width="48dp"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center"
+                    android:maxLength="1"
+                    android:inputType="number"
+                    android:textSize="20sp"
+                    android:background="@drawable/bg_input_frost" />
+
+                <EditText
+                    android:id="@+id/otp3"
+                    android:layout_width="48dp"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center"
+                    android:maxLength="1"
+                    android:inputType="number"
+                    android:textSize="20sp"
+                    android:background="@drawable/bg_input_frost" />
+
+                <EditText
+                    android:id="@+id/otp4"
+                    android:layout_width="48dp"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center"
+                    android:maxLength="1"
+                    android:inputType="number"
+                    android:textSize="20sp"
+                    android:background="@drawable/bg_input_frost" />
+
+            </LinearLayout>
+
+            <!-- Resend & Timer -->
+            <TextView
+                android:id="@+id/tvResend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resend OTP"
+                android:textSize="15sp"
+                android:textColor="#00F5D4"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="16dp"
+                android:fontFamily="@font/alegreya_sans_thin" />
+
+            <!-- Verify Button -->
+            <Button
+                android:id="@+id/btnVerifyOtp"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="Verify OTP"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/bg_button_glow"
+                app:backgroundTint="@android:color/transparent"
+                android:stateListAnimator="@null" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
