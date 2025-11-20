@@ -6,6 +6,14 @@
 
 KisanBandhu simplifies farming queries by allowing users to interact via text, voice, or images. Whether it's identifying a crop disease from a photo, asking about the best pesticides, or checking subsidy information, the app delivers clear and actionable advice in real-time.
 
+## 📸 Screenshots
+
+| | | |
+|:-------------------------:|:-------------------------:|:-------------------------:|
+| ![Splash Screen](images/splashScreen) <br> **Splash Screen** | ![Login Page](images/loginPage) <br> **Login Page** | ![Voice Input](images/speechTranscriber) <br> **Voice Input** |
+| ![Text Prompt](images/textPromptResponse) <br> **Text Query** | ![Chatbot Response](images/chatbotResponse) <br> **AI Response** | ![Image Attachment](images/imageAttachment) <br> **Image Attachment** |
+| ![Image Analysis](images/imagePrompt) <br> **Image Analysis** | | |
+
 ## ✨ Key Features
 
 -   **🤖 Multimodal AI Chat:** Interact with the assistant using text, voice-to-text, or image uploads.
